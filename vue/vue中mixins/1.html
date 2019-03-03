@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="a">
+      <pop></pop>
+        <mouse></mouse>
+        
+    </div>
+    <template id="popTpl">
+        <div>
+            <button @click="toggle" >打招呼</button>
+            <p v-if="visible">
+                哈喽，我出现了<br>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam ullam vel distinctio? Laboriosam officiis hic aliquam saepe mollitia magni sint minima, ullam aspernatur a qui beatae dignissimos labore cum veritatis!
+            </p>
+        </div>
+    </template>
+<template id="mouseTpl">
+    <div>
+        <span @mouseenter="show" @mouseleave="hide" style="background:skyblue" >碰我啊</span>
+        <span v-if="visible">hi。你好</span>
+    </div>
+</template>
+    <script src="../vue/vue.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

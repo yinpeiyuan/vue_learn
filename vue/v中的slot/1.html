@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+    <style>
+        .box{
+            max-width: 300px;
+            border: 1px solid black;
+            margin-bottom:10px;
+        }
+        
+        .box .title{
+            border-bottom: 1px solid black;
+        }
+        .box .container{
+            border-bottom: 1px solid black;
+        }
+
+    </style>
+<body>
+    
+    <div id="a">
+        <titdiv>
+            <div slot="title">
+                哈喽
+            </div>
+            
+           
+        </titdiv>
+        <titdiv>
+            <div slot="title">
+                我不好
+            </div>
+           
+            
+        </titdiv>
+        </div>
+        <template id='tit'> 
+            <div class="box">
+                <div class="title">
+                    <slot name="title"></slot>
+                </div>
+                
+                <div class="container">
+                        <slot name="container">lore</slot>
+                </div>
+
+               
+                <div class= "footer">
+                        <slot name="footer">也许明天</slot>
+                </div>
+            </div>
+        </template>
+
+
+    <script src="../vue/vue.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

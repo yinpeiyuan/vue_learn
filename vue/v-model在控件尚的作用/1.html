@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="a">
+        男<input type="radio" v-model="sex" value="male">
+        女<input type="radio" v-model="sex" value="female">
+        {{sex}}
+
+        <div style="margin-top:10px">
+            篮球<input type="checkbox" v-model="hobbies" value="basketball">
+            足球<input type="checkbox" v-model="hobbies" value="football">
+        {{hobbies}}
+        </div>
+
+        <div style="margin-top:10px">
+        <select v-model="like">你喜欢谁
+            <option value="1">小明</option>
+            <option value="2">老王</option>
+            
+        </select>
+        {{like}}
+        </div>
+
+        <div style="margin-top:10px">
+            <select v-model="mul" multiple>你喜欢谁
+                <option value="1">小明</option>
+                <option value="2">老王</option>
+                <option value="3">夏利</option>
+            </select>
+            {{mul}}
+            </div>
+
+    </div>
+
+    
+
+
+    <script src="../vue/vue.js"></script>
+    <script src="./main.js">
+   
+    </script>
+    
+</body>
+</html>

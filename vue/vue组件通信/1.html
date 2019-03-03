@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="a">
+        <!-- 父子通信 -->
+        <!-- <user msg='hello'></user> -->
+        <!-- 子父通信 -->
+        <fardiv></fardiv>
+    </div>
+    <!-- <template id="tpl">
+        <div>
+            <a :href="'/user/'+msg">{{msg}}</a>
+        </div>
+    </template> -->
+    
+    <template id="son">
+        <div>
+            <button @click="onclick">爸爸，我要喝水 </button>
+        </div>
+    </template>
+
+    <template id="far">
+        <div>
+           <sondiv @drink="drink"></sondiv> 
+           <span v-if="condition" >给你喝水,儿子 ---{{msg}}</span>
+        </div>
+    </template>
+
+
+
+
+    <script src="../vue/vue.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

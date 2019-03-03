@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="a">
+        <div>
+            <router-link to="/">首页</router-link>
+            <router-link to="/about">关于</router-link>
+            <router-link to="/user/xiaoming?age=10">小明的主页</router-link>
+            <router-link to="/user/xiaohong?age=15">小红的主页</router-link>
+        </div>
+        <router-view></router-view>
+
+
+    </div>
+    <script src="../vue/vue.js"></script>
+    <script src="../vue/vue-router.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

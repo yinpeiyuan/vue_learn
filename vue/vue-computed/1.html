@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="a">
+       <table>
+           <tr>
+               <td>
+                   语文
+               </td>
+               <td>
+                   <input type="text" v-model.number="Chinese">
+               </td>
+           </tr>
+           <tr>
+               <td>
+                   数学
+               </td>
+               <td>
+                <input type="text" v-model.number="Maths">
+               </td>
+           </tr>
+           <tr>
+               <td>英语</td>
+               <td>
+                    <input type="text" v-model.number="English">
+               </td>
+           </tr>
+           <tr>
+               <td>总分</td>
+               <td>{{sum}}</td>
+           </tr>
+           <tr>
+               <td>平均分</td>
+               <td>{{average}}</td>
+           </tr>
+       </table>
+        
+    </div>
+
+    <script src="../vue/vue.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

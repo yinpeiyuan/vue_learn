@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .sizeIcon{
+            height: 40px;
+            width: 40px;
+            
+        }
+        .size{
+            height: 40px;
+            padding: 1px;
+        }
+        div{
+            display: flex;
+            
+            align-items:Center;
+        }
+        span {
+            font-size: 22px;
+            margin-left: 6px;
+        }
+        .img:hover{
+            display:block;
+
+            background: url(./logo_blue.svg),no-repeat;
+            background-size: 100%;
+        }
+        .img{
+            background: url(./logo.svg),no-repeat;
+            background-size: cover;
+        }
+        .islike{
+            display:block;
+
+            background: url(./logo_blue.svg),no-repeat;
+            background-size: 100%;
+        }
+    </style>
+</head>
+
+
+<body>
+       
+    
+    <div id="a">
+       <like></like>
+       
+    </div>
+    <template id="likeIcon">
+        <div > 
+        <span class="sizeIcon img" :class="{islike:active}"  @click="onClick"></span>
+        <span>{{count}}</span>
+        </div>
+           
+    </template>
+    <script src="../vue/vue.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
